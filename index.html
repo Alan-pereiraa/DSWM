@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página de Eventos</title>
+
+    <style>
+      label {
+        width: 100%;
+        color: white;
+      }
+      input,
+      select {
+        width: 100%;
+        margin-top: 1%;
+        outline: none;
+        height: 30px;
+        padding-left: 5px;
+        border: none;
+        border-radius: 2px;
+      }
+
+      select {
+        height: 25px;
+      }
+
+      .buttonSubmit {
+        height: 35px;
+        font-size: 15px;
+      }
+
+      .radio-buttons {
+        display: flex;
+      }
+
+      .radio-buttons label {
+        display: flex;
+        align-items: center;
+        gap: 2px;
+        cursor: pointer;
+      }
+
+      .radio-buttons input{
+        width: 20px;
+      }
+    </style>
+  </head>
+  <body
+    style="
+      background-color: #222;
+      padding: 0;
+      box-sizing: border-box;
+      margin: 0;
+    "
+  >
+    <header
+      style="
+        color: white;
+        background-color: black;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 4rem;
+        align-items: center;
+        border-bottom: 1px solid white;
+        height: 100px;
+      "
+    >
+      <img
+        style="width: 100px; height: 100px"
+        src="https://th.bing.com/th/id/OIP.SfuMH2BVc0A-KOo737Q24AHaHa?rs=1&pid=ImgDetMain"
+        alt="Logo Rock in Rio"
+      />
+      <h1 style="text-align: center">Rock in Rio</h1>
+    </header>
+    <div
+      style="
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        margin: 2rem auto;
+        background-color: #000;
+        padding: 20px;
+        padding-top: 100px;
+      "
+    >
+      <div
+        class="apresentation"
+        style="color: white; margin: 1rem auto; width: 80%"
+      >
+        <img
+          style="width: 100%; height: 100%"
+          src="https://curitibacult.com.br/wp-content/uploads/2021/02/rock-in-rio.jpg"
+          alt=""
+        />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed vitae
+          soluta veritatis vero qui natus optio quas quaerat impedit distinctio,
+          nulla dolor dolores laboriosam rerum labore, repellendus ad reiciendis
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi in
+          eligendi iure non inventore quo quis voluptas exercitationem?
+          Doloribus suscipit expedita praesentium eius minus repellat tempora
+          incidunt, necessitatibus quia repellendus.
+        </p>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis
+          dolorum cupiditate soluta eos earum officiis corporis itaque numquam
+          velit, magni, rerum placeat. Excepturi, adipisci in dignissimos modi
+          nesciunt odit magni?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti enim
+          temporibus id quos iste beatae sit? Temporibus ratione nostrum
+          voluptatem, facere ullam autem repellat nulla nesciunt aliquid
+          consequuntur quam optio?
+        </p>
+      </div>
+      <div class="midia" style="margin: 2rem auto; width: 80%">
+        <iframe
+          width="100%"
+          height="360"
+          src="https://www.youtube.com/embed/Z1NKzItKkD8"
+          frameborder="0"
+          allowfullscreen
+        ></iframe>
+      </div>
+
+      <table
+        border="1"
+        style="
+          color: white;
+          width: 80%;
+          text-align: center;
+          margin: 0 auto;
+          font-size: 22px;
+        "
+      >
+        <thead>
+          <tr>
+            <th>Eventos</th>
+            <th>Horários</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Travis Scott</td>
+            <td>19:00</td>
+          </tr>
+          <tr>
+            <td>Post Malone</td>
+            <td>22:00</td>
+          </tr>
+          <tr>
+            <td>Orochi, Chefin e Oruam</td>
+            <td>00:00</td>
+          </tr>
+        </tbody>
+      </table>
+      <form
+        action=""
+        style="
+          display: flex;
+          flex-direction: column;
+          width: 80%;
+          margin: 2rem auto;
+          border: 1px solid white;
+          padding: 3%;
+          gap: 10px;
+        "
+      >
+        <h2 style="color: white; text-align: center; font-weight: bold">
+          FORMULÁRIO ROCK IN RIO
+        </h2>
+        <label for="nome">
+          Nome:<input type="text" name="nome" id="nome" />
+        </label>
+        <label for="email">
+          E-mail: <input type="email" name="email" id="email" />
+        </label>
+        <label for="telefone">
+          Telefone: <input type="tel" name="tel" id="telefone" />
+        </label>
+        <label for="data">
+          Data: <input type="date" name="data" id="data" />
+        </label>
+        <label for="pagamento" style="color: white">
+          Selecione o Método de pagamento:
+          <select name="" id="pagamento" style="width: 80%" required>
+            <option value="Cartão de débito">Cartão de Débito</option>
+            <option value="Cartão de Crédito" selected>
+              Cartão de Crédito
+            </option>
+            <option value="Pix">Pix</option>
+          </select>
+        </label>
+        <div class="radio-buttons">
+          <label for="camarote">
+            <input type="radio" name="ingresso" id="camarote" />
+            Camarote
+          </label>
+          <label for="pista">
+            <input type="radio" name="ingresso" id="pista" />
+            Pista
+          </label>
+          <label for="vip">
+            <input type="radio" name="ingresso" id="vip" />
+            VIP
+          </label>
+        </div>
+        <div style="display: flex; gap: 2px; align-items: center">
+          <input
+            type="checkbox"
+            name=""
+            id="submitEmail"
+            style="width: 20px; height: 20px"
+          />
+          <label for="submitEmail" style="width: auto; font-size: 15px">
+            Receber atualizações por e- mail
+          </label>
+        </div>
+        <input type="button" value="Enviar" class="buttonSubmit" />
+      </form>
+    </div>
+    <footer
+      style="
+        background-color: black;
+        border-top: solid 1px white;
+        color: white;
+        padding: 20px;
+      "
+    >
+      <p style="font-size: 18px; font-weight: bold; text-align: center">
+        &copy - Alan Pereira
+      </p>
+    </footer>
+  </body>
+</html>
