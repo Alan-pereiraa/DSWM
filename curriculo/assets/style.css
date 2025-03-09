@@ -1,0 +1,183 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background-color: darkblue;
+    padding: 2%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5%;
+}
+
+img{
+    width: 200px;
+    border-radius: 50%;
+}
+
+ul{
+    display: column;
+}
+
+ul > li{
+    margin: 10px;
+    color: white;
+
+    display: flex;
+    text-align: center;
+}
+
+ul > li > a,
+ul > li > p{
+    text-decoration: none;
+    color: white;
+    margin-left: 10px;
+}
+
+.info-perfil{
+    display: flex;
+    flex-direction: column;
+}
+
+.info-perfil > h1{
+    font-size: 32px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.info-perfil > ul > li > a:hover,
+.info-perfil > ul > li > p:hover{
+    text-decoration: underline;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.sobre,
+.academico,
+.exp-profissional,
+.skills,
+.cursos-certificados{
+    background-color: rgb(223, 236, 248);
+    margin: 20px 0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+h2{
+
+    font-size: 22px;
+    background-color: darkblue;
+    display: inline-block;
+    padding: 10px;
+    color: white;
+}
+
+.sobre > p{
+    font-size: 18px;
+    padding: 20px;
+}
+
+.graduacao,
+.exp-1{
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.graduacao > h3{
+    font-size: 18px;
+}
+
+h5{
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.graduacao > p {
+    font-size: 18px;
+}
+
+.tecnologias,
+.atribuicoes{
+    padding: 10px;
+}
+
+.tecnologias > ol,
+.atribuicoes > ol{
+    padding: 20px;
+    list-style-type: disc;
+}
+
+.exp-1{
+    font-size: 18px;
+}
+
+.skills{
+    display: flex;
+    gap: 5px;
+
+    background-color: transparent;
+}
+
+.soft,
+.hard{
+    background-color:  rgb(223, 236, 248);
+
+    display: flex;
+    flex-direction: column;
+}
+
+.soft > h2,
+.hard > h2{
+    text-align: center;
+}
+
+.soft > ul > li,
+.hard > ul > li{
+    color: black;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.soft > ul > li > p,
+.hard > ul > li > p{
+    text-align: left;
+    color: black;
+}
+
+.cursos-certificados > ul > li{
+    color: black;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.cursos-certificados > ul > li > p{
+    color: black;
+    text-align: start;
+}
+
+.tecnologias-cursos{
+    text-align: start;
+}
+
+.tecnologias-cursos > ol{
+    list-style-type: disc;
+    padding: 20px;
+}
