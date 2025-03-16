@@ -1,0 +1,48 @@
+#form-user{
+    width: 60%;
+    margin: 10px auto;
+    background-color: #4caf50;
+    padding: 40px 0;
+    border-radius: 20px;
+}
+
+#form-user h2{
+    color: #fff;
+    text-align: center;
+}
+
+#form-user ul{
+    width: 80%;
+    padding: 20px 0;
+    margin: 0 auto;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+#form-user ul li{
+    display: flex;
+    flex-direction: column;
+}
+
+#form-user ul li input{
+    padding: 8px 10px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+#form-user ul li label{
+    margin: 5px 0;
+    color: #fff;
+}
+
+#input-file{
+    color: #fff;
+}
+
+#button{
+    margin-top: 10px;
+    color: #4caf50;
+}
