@@ -1,0 +1,50 @@
+/* Classes gerais */
+.conteudo{
+    background-color: #fff;
+    margin: 20px auto;
+    padding: 20px;
+    width: 80%;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.conteudo img{
+    width: 50%;
+    border-radius: 10px;
+}
+
+.conteudo h2{
+    margin-bottom: 20px;
+
+}
+
+.conteudo p{
+    margin-bottom: 10px;
+}
+
+.text-conteudo{
+    padding: 20px;
+}
+
+.destaque{
+    border: 2px solid #4caf50;
+    padding: 30px 50px;
+    background-color: #e8f5e9;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.destaque ul{
+    padding: 0 40px;
+}
+
+.destaque img{
+    width: 100%;
+    max-width: 300px;
+    margin: 10px auto;
+    border-radius: 10px;
+}

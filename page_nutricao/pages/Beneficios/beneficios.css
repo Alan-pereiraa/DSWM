@@ -1,0 +1,45 @@
+.conteudo{
+    width: 80%;
+    margin: 20px auto;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    padding: 40px;
+}
+
+.conteudo h2{
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.conteudo ul{
+    list-style: none;
+}
+
+.conteudo ul li{
+    margin-top: 20px;
+}
+
+.conteudo ul li ul li{
+    margin-top: 0;
+}
+
+.conteudo ul li ul{
+    list-style: disc;
+}
+
+.conteudo ul li h3{
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.depoimentos ul li{
+    background-color: #d7f6d7;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.beneficios ul li ul{
+    padding-left: 40px;
+}
