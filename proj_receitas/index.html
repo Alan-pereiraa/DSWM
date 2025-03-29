@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid - Layout CSS</title>
+
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-color: #f7690b;
+        }
+
+        .container{
+            max-width: 1024px;
+            margin: 20px auto;
+
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .item{
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+            position: relative;
+
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+        }
+
+        .item img{
+            max-width:100%;
+            height: 100%;
+            border-radius: 10px;
+
+            object-fit: cover;
+        }
+
+        .conteudo{
+            margin-left: 20px;
+
+            display: flex;
+            flex-direction: column;
+        }
+
+        .conteudo h1{
+            text-align: center;
+            font-size: 22px;
+        }
+
+        .conteudo p{
+            font-size: 15px;
+            margin: 10px 0;
+
+        }
+
+        .conteudo  button{
+            width: 100%;
+            border: none;
+            padding:  10px;
+            background-color: #f7690b;
+            color: #fff;
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+        .conteudo span{
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .item:hover{
+            transform: scale(1.03);
+            transition: 0.3s;
+        }
+
+        .conteudo button:hover{
+            transform: scale(1.02);
+            transition: 0.1s;
+            cursor: pointer;
+        }
+
+        @media (max-width: 1024px){
+            .container{
+                width: 80%;
+                grid-template-columns: 1fr;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">
+            <img src="./assets/receita-macarrao-alho-oleo-camarao.jpg" alt="Macarrão">
+
+            <div class="conteudo">
+                <h1>Macarrão ao Alho e Óleo</h1>
+                <p> Uma receita simples e saborosa, perfeita para aqueles dias corridos. O alho dourado e o azeite de oliva fazem toda a diferença, criando um prato delicioso e aromático. Ideal para qualquer momento!</p>
+    
+                <span>⭐⭐⭐⭐⭐</span>
+                <button>
+                    Acessar receita
+                </button>
+            </div>
+        </div>
+        <div class="item">
+            <img src="./assets/feijoada.jpeg" alt="Feijoada">
+
+            <div class="conteudo">
+                <h1>Feijoada</h1>
+                <p>A feijoada é um prato típico da culinária brasileira, composto por feijão preto cozido com carnes de porco e boi, como linguiça, carne seca, costela e orelha de porco. É servido com arroz, farofa, couve refogada e laranja para dar um toque cítrico.</p>
+    
+                <span>⭐⭐⭐⭐⭐</span>
+                <button>
+                    Acessar receita
+                </button>
+            </div>
+        </div>
+        <div class="item">
+            <img src="./assets/PIZZA-MARGHERITA.jpg" alt="Pizza Margherita">
+
+            <div class="conteudo">
+                <h1>Pizza Margherita</h1>
+                <p>A pizza Margherita é um clássico da culinária italiana, feita com molho de tomate, queijo mussarela, manjericão fresco e azeite de oliva. Ela é simples, mas deliciosa, e representa as cores da bandeira italiana. </p>
+    
+                <span>⭐⭐⭐⭐⭐</span>
+                <button>
+                    Acessar receita
+                </button>
+            </div>
+        </div>
+        <div class="item">
+            <img src="./assets/sushi.jpg" alt="Sushi">
+
+            <div class="conteudo">
+                <h1>Sushi</h1>
+                <p>O sushi é um prato japonês feito com arroz temperado com vinagre, peixe cru (como salmão, atum ou linguado) e, às vezes, algas ou vegetais. Pode ser servido de várias formas, como nigiri, maki ou temaki. </p>
+    
+                <span>⭐⭐⭐⭐⭐</span>
+                <button>
+                    Acessar receita
+                </button>
+            </div>
+        </div>
+        <div class="item">
+            <img src="./assets/churrasco.jpg" alt="Churrasco">
+
+            <div class="conteudo">
+                <h1>Churrasco Gaúcho</h1>
+                <p>O churrasco gaúcho é uma tradição do sul do Brasil, caracterizado por carnes de boi, porco, frango e linguiça, assadas em espetos no fogo de chão. O prato é acompanhado por arroz, farofa, salada e vinagrete. </p>
+    
+                <span>⭐⭐⭐⭐⭐</span>
+                <button>
+                    Acessar receita
+                </button>
+            </div>
+        </div>
+        <div class="item">
+            <img src="./assets/moqueca-baiana-com-file-de-peixe-em-molho-de-tomate.jpg" alt="Moqueca">
+
+            <div class="conteudo">
+                <h1>Moqueca Baiana</h1>
+                <p>A moqueca baiana é um prato tradicional da Bahia, feito com peixe (geralmente robalo ou dourado) cozido com leite de coco, azeite de dendê, cebola, pimentões, coentro e tomate. É um prato saboroso, com um toque levemente picante, servido com arroz branco e farofa. </p>
+    
+                <span>⭐⭐⭐⭐⭐</span>
+                <button>
+                    Acessar receita
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
