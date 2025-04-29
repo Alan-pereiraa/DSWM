@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - ByteStore</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body class="">
+    <div class="container">
+        <div class="bloquead">
+            <i class="bi bi-ban"></i>
+            <h2>Acesso bloqueado!</h2>
+        </div>
+        <form id="form" class="bg-light">
+            <h1 class="py-3"><strong>ByteCode</strong> - Login</h1>
+            <p class="pb-3">Ensira corretamente suas informações nos campos dierecionados!</p>
+
+            <div class="target-input my-2">
+                <label for="input-name" class="form-label">Nome:</label>
+                <input type="text" id="input-name" class="form-control" required>
+            </div>
+
+            <div class="target-password mt-2 mb-4">
+                <label for="input-password" class="form-label d-block">Senha:</label>
+                <div class="input-group">
+                    <input type="password" id="input-password" class="form-control" required>
+                    <button class="btn border" type="button" id="button">
+                        <i class="bi bi-eye-slash" id="toggleSenha" style="cursor: pointer;"></i>
+                    </button>
+                </div>
+            </div>
+            <p id="counter">Tentativas restantes: 3</p>
+
+            <button type="submit" class="btn btn-primary w-100 mt-3" id="button-submit">Entrar</button>
+        </form>
+    </div>
+
+    <script src="./scripts/main.js"></script>
+</body>
+</html>
