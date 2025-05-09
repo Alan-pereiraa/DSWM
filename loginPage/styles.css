@@ -3,7 +3,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #ded9d9;
+    background-color: #ffffff;
     font-family: "Poppins", sans-serif;
 }
 
@@ -15,31 +15,18 @@ body{
     max-width: 90%;
     margin: 0 auto;
     padding: 4em 2em;
-    color: #fff;
     border-radius: 20px;
-    color: #000;
 }
 
 #form > h1{
     font-weight: 500;
+    display: block;
 }
 
-strong{
-    color: rgb(19, 194, 19);
-}
-
-#counter{
-    font-weight: bold;
-}
-
-.bloquead{
-    margin: 0 auto;
-    font-size: 50px;
-    text-align: center;
-    font-weight: bold;
+#counterDiv{
     display: none;
 }
 
-.bloquead i{
-    font-size: 200px;
+#error{
+    visibility: hidden;
 }

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - ByteStore</title>
+    <title>Login - CounterClick</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,36 +15,32 @@
 
     <link rel="stylesheet" href="./styles.css">
 </head>
-<body class="">
+<body>
     <div class="container">
-        <div class="bloquead">
-            <i class="bi bi-ban"></i>
-            <h2>Acesso bloqueado!</h2>
-        </div>
-        <form id="form" class="bg-light">
-            <h1 class="py-3"><strong>ByteCode</strong> - Login</h1>
-            <p class="pb-3">Ensira corretamente suas informações nos campos dierecionados!</p>
+        <form id="form" class="border">
+            <h1 class="py-3"><strong class="text-primary">CounterClick</strong> - Login</h1>
+            <p class="pb-3">Ensira seu nome para entrar no contador!</p>
 
-            <div class="target-input my-2">
+            <div class="target-input mb-1">
                 <label for="input-name" class="form-label">Nome:</label>
                 <input type="text" id="input-name" class="form-control" required>
             </div>
+            <span class="d-block rounded-1" id="error">Insira um nome!</span>
 
-            <div class="target-password mt-2 mb-4">
-                <label for="input-password" class="form-label d-block">Senha:</label>
-                <div class="input-group">
-                    <input type="password" id="input-password" class="form-control" required>
-                    <button class="btn border" type="button" id="button">
-                        <i class="bi bi-eye-slash" id="toggleSenha" style="cursor: pointer;"></i>
-                    </button>
-                </div>
-            </div>
-            <p id="counter">Tentativas restantes: 3</p>
-
-            <button type="submit" class="btn btn-primary w-100 mt-3" id="button-submit">Entrar</button>
+            <button type="button" id="button-entrar" class="btn btn-primary w-100 mt-2">Entrar</button>
         </form>
+        <div id="counterDiv" class="border p-5 rounded">
+            <div class="row">
+                <h1 class="text-center" id="title-counter">Seja bem vindo Alan!</h1>
+                <span id="counter" class=" text-center fs-1">0</span>
+                <p class="text-center fs-5">Contador</p>
+                <button type="button" class="btn btn-primary my-3" id="button-counter">
+                    Click
+                </button>
+            </div>
+        </div>
     </div>
 
-    <script src="./scripts/main.js"></script>
+    <script src="./main.js"></script>
 </body>
 </html>
